@@ -25,6 +25,7 @@ class LoginController extends Controller
 
         $email = $request->input('email');
 
+        //tokennya belum menggunakan JWT
         try {
             $login = User::where('email', $email)->first();
             if ($login) {
