@@ -11,8 +11,13 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+//$router->get('/', function () use ($router) {
+//    return $router->app->version();
+//});
+
+//show version of Lumen
+$router->get('/', function () {
+    return view('greeting', ['name' => 'Welcome man, selamat bekerja keras']);
 });
 
 // User
