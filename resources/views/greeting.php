@@ -2,6 +2,6 @@
 
 <html>
 <body>
-<h1>Hello, <?php echo "Aremania, " . $name; ?></h1>
+<h1>Hello, <?php echo "PSIS Mania, " . $name; ?></h1>
 </body>
 </html>
