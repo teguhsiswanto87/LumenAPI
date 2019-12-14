@@ -97,4 +97,30 @@ $app->router->group([
     require __DIR__ . '/../routes/web.php';
 });
 
+# [START] Set the storage path to the environment variable APP_STORAGE
+/*
+|--------------------------------------------------------------------------
+| Set Storage Path
+|--------------------------------------------------------------------------
+|
+| This script allows us to override the default storage location used by
+| the  application.  You may set the APP_STORAGE environment variable
+| in your .env file,  if not set the default location will be used
+|
+*/
+$app->useStoragePath(env('APP_STORAGE', base_path() . '/storage'));
+# [END]
+
+
+/*
+|--------------------------------------------------------------------------
+| Return The Application
+|--------------------------------------------------------------------------
+|
+| This script returns the application instance. The instance is given to
+| the calling script so we can separate the building of the instances
+| from the actual running of the application and sending responses.
+|
+*/
+
 return $app;
