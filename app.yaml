@@ -22,7 +22,7 @@
 # For a list of supported resources,
 # see https://cloud.google.com/deployment-manager/docs/configuration/supported-resource-types.
 resources:
-    -   type: compute.v2.instance
+    -   type: compute.v1.instance
             name: vm-teguhsiswanto87
             properties:
                 # The properties of the resource depend on the type of resource. For a list
