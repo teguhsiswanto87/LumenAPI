@@ -17,7 +17,7 @@
 
 //show version of Lumen
 $router->get('/', function () {
-    return view('greeting', ['name' => 'Welcome man, selamat bekerja keras']);
+    return view('greeting', ['name' => 'Kartonyono Medot Janji']);
 });
 
 // User
