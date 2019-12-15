@@ -3,13 +3,16 @@ runtime: php72
 runtime_config:
     document_root: public
 
-skip_files:
-    -.env
-
 env_variables:
-    # Replace USER, PASSWORD, DATABASE, and CONNECTION_NAME with the
-    # values obtained when configuring your Cloud SQL instance.
-    CLOUDSQL_USER: "root"
-    CLOUDSQL_PASSWORD: "siswanto234432"
-    CLOUDSQL_DSN: "mysql:dbname=lumenapi;unix_socket=/cloudsql/pomade:asia-southeast1:apo-manajemen"
+    ## Put production environment variables here.
+    APP_KEY: YOUR_APP_KEY
+    APP_STORAGE: /tmp
+    VIEW_COMPILED_PATH: /tmp
+    CACHE_DRIVER: database
+    SESSION_DRIVER: database
+    ## Set these environment variables according to your CloudSQL configuration.
+    DB_DATABASE: lumenapi
+    DB_USERNAME: root
+    DB_PASSWORD: siswanto234432
+    DB_SOCKET: "/cloudsql/pomade:asia-southeast1:apo-manajemen"
 
